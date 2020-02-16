@@ -1,0 +1,40 @@
+@import "./layout";
+
+
+// 按钮组件
+@mixin btn($size:14px, $color:#fff, $bgColor:#F04752, $padding:5px, $radius:5px) {
+    padding: $padding;
+    background-color: $bgColor;
+    border-radius: $radius;
+    border: 1px solid $bgColor;
+    font-size: $size;
+    color: $color;
+    text-align: center;
+    line-height: 1;
+    display: inline-block;
+}
+
+// 列表组件
+@mixin list($direction:column) {
+    @include flex($direction);
+}
+
+
+// 面板组件
+@mixin panel($bgColor:#fff, $padding:0, $margin:20px 0, $height:112px, $txPadding:0 32px, $color:#333, $fontSize:32px) {
+    background: $bgColor;
+    padding: $padding;
+    margin: $margin;
+
+    >h4 {
+        height: $height;
+        line-height: $height;
+        padding: $txPadding;
+        text-overflow: ellipsis; // 文本溢出用...
+        white-space: nowrap; // 禁止换行
+        overflow: hidden; // 超出隐藏
+        text-align: center;
+        color: $color;
+        size: $fontSize;
+    }
+}
