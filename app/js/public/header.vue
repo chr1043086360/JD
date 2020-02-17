@@ -1,7 +1,8 @@
 <template>
   <div :class="$style.header">
     <span :class="$style.left">
-      <em>注册</em>&nbsp;|&nbsp;
+      <!-- 实际中应该是两个链接地址, 分别跳转到注册和登录 -->
+      <em>注册</em>&nbsp;|
       <em>登录</em>
     </span>
     <btn :class="$style.btnDownload">App下载</btn>
@@ -27,8 +28,7 @@ export default {
   left: 0;
   right: 0;
   font-size: 32px;
-  background: #fff
-    url(https://img20.360buyimg.com/mcpageview/jfs/t1/57923/31/9045/27881/5d68bf7fEe7cc16d2/c6b18ff981466ce6.png)
+  background: #fff url(http://m.jr.jd.com/spe/qyy/main/images/jr-logo.png)
     center center no-repeat;
   background-size: auto 50%;
   z-index: 100;
@@ -41,13 +41,13 @@ export default {
   .btnDownload {
     float: right;
     font-size: 24px;
-    border-width: 56px;
+    border-width: 0;
     height: 56px;
     line-height: 56px;
     min-width: 120px;
     padding: 0;
     border-radius: 4px;
-    margin: 28px 24px 0 0;
+    margin: 24px 24px 0 0;
   }
 }
 </style>

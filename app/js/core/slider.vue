@@ -6,7 +6,7 @@
                     <img :src="item.src" alt="">
                 </router-link>
             </swiper-slide>
-            <div class="swiper-pagination" v-if="options.paginaton"></div>
+            <div class="swiper-pagination" v-if="options.paginaton" slot="pagination"></div>
         </swiper>
     </section>
 </template>
@@ -37,10 +37,14 @@ export default {
         // [{href:"", src:""}]
         return [];
       }
-    }
+    },
+    cname: {
+      type: String,
+      default: ""
+    },
   }
 };
 </script>
 <style lang="scss">
-@import "swiper/dist/css/swiper";
+@import "~swiper/dist/css/swiper";
 </style>
