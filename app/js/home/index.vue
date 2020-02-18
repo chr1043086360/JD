@@ -3,18 +3,27 @@
     <Heador></Heador>
     <homeSlider></homeSlider>
     <novice></novice>
+    <borrow></borrow>
+    <money></money>
+    <product></product>
   </div>
 </template>
 
 <script>
 import Heador from "../public/header";
 import homeSlider from "./homeSlider";
-import novice from './novice';
+import novice from "./novice";
+import borrow from "./borrow";
+import money from "./money";
+import product from "./product";
 export default {
   components: {
     Heador,
     homeSlider,
-    novice
+    novice,
+    borrow,
+    money,
+    product
   }
 };
 </script>

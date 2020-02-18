@@ -42,11 +42,6 @@ export default {
             el: ".swiper-pagination"
           },
           notNextTick: false,
-          height: window.innerHeight,
-          setWrapperSize: true,
-          autoHeight: true,
-          // slidesPerView: 4,
-          // spaceBetween: 20
         };
       }
     },
