@@ -1,7 +1,9 @@
 <template>
   <Panel title="新品推荐" :class="$style.panel">
     <section :class="$style.content">
-      <router-link to="{name: 'home'}" :class="$style.arrow">更多尖货 ></router-link>
+      <router-link :to="{ name: 'JDIndex' }" :class="$style.arrow"
+        >更多尖货 ></router-link
+      >
       <Slider :options="options" :items="items" cname="product-slider"></Slider>
     </section>
   </Panel>

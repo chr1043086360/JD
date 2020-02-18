@@ -95,13 +95,14 @@ export default {
     text-align: center;
     img {
       display: inline-block;
-      width: 90px;
-      height: 90px;
+      width: 80px;
+      height: 80px;
     }
     h4 {
-      font-size: 26px;
+      font-size: 24px;
       margin-top: 12px;
       color: #666;
+      font-weight: 600;
     }
   }
 }

@@ -1,14 +1,14 @@
 <template>
   <Panel title="理财精选" :class="$style.panel">
     <section :class="$style.content">
-      <router-link to="{name: 'home'}" :class="$style.link">
+      <router-link :to="{ name: 'JDIndex' }" :class="$style.link">
         <dl :class="$style.item" v-for="item in items" :key="item.title">
           <dt>
-            {{item.title}}
-            <span :class="$style.red">{{item.sub}}</span>
+            {{ item.title }}
+            <span :class="$style.red">{{ item.sub }}</span>
           </dt>
-          <dd>{{item.rate}}</dd>
-          <dd>{{item.text}}</dd>
+          <dd>{{ item.rate }}</dd>
+          <dd>{{ item.text }}</dd>
         </dl>
       </router-link>
     </section>
@@ -66,7 +66,7 @@ export default {
       text-decoration: none;
     }
     .link {
-        padding-left: 20px;
+      padding-left: 20px;
       @include flex(row);
 
       justify-content: space-around;

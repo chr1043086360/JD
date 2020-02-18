@@ -12,6 +12,7 @@
 <script>
 import btn from "../core/btn";
 export default {
+  name: "JDHeader",
   components: {
     btn
   }

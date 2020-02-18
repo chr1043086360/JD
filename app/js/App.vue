@@ -1,11 +1,19 @@
 <template>
   <div id="app">
-    <router-view/>
+    <JDHeader></JDHeader>
+    <router-view />
+    <JDNavbar></JDNavbar>
   </div>
 </template>
 
 <script>
+import JDHeader from "./public/JDHeader";
+import JDNavbar from "./public/JDNavbar";
 export default {
-  name: 'app'
-}
+  name: "app",
+  components: {
+    JDHeader,
+    JDNavbar
+  }
+};
 </script>

@@ -73,9 +73,9 @@ export default {
         text-align: center;
         ul {
           width: 100%;
-          p{
+          p {
             text-align: left;
-            margin-top: 3px; 
+            margin-top: 3px;
           }
           li {
             height: 144px;
